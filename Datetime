@@ -1,0 +1,10 @@
+#Display the current date:
+import datetime
+
+x = datetime.datetime.now()
+print(x)
+
+#Output : 2023-09-22 01:44:26.656171
+
+
+Link : https://www.w3schools.com/python/python_datetime.asp
