@@ -1,0 +1,26 @@
+#Example - 1 : search method
+import re
+txt = "The rain in Spain"
+x = re.search("^The.*Spain$", txt)
+
+
+#Example - 2 : findall method
+txt = "The rain in Spain"
+x = re.findall("ai", txt)
+
+
+#Example - 3 : Search for the first white-space character in the string
+txt = "The rain in Spain"
+x = re.search("\s", txt)
+print("The first white-space character is located in position:", x.start()
+
+
+#Example - 4 : split() method, Split the string only at the first occurrence
+txt = "The rain in Spain"
+x = re.split("\s", txt, 1)
+
+#Example - 4 : sub() method, Replace every white-space character with the number 9
+txt = "The rain in Spain"
+x = re.sub("\s", "9", txt)
+
+#Link : https://www.w3schools.com/python/python_regex.asp
