@@ -1,0 +1,68 @@
+#Example - 1 : Create a NumPy ndarray Object
+import numpy as np
+
+arr = np.array([1, 2, 3, 4, 5])
+
+print(arr)
+
+print(type(arr))
+
+--> Output :
+[1 2 3 4 5]
+<class 'numpy.ndarray'>
+
+To create an ndarray, we can pass a list, tuple or any array-like object into the array() method, and it will be converted into an ndarray
+
+#Example - 2 : 0-D Arrays
+arr = np.array(42)
+
+#Example - 3 : 1-D Arrays
+arr = np.array([1, 2, 3, 4, 5])
+
+#Example - 4 : 2-D Arrays
+arr = np.array([[1, 2, 3], [4, 5, 6]])
+
+#Example - 5 : 3-D arrays
+arr = np.array([[[1, 2, 3], [4, 5, 6]], [[1, 2, 3], [4, 5, 6]]])
+
+#Example - 6 : Check Number of Dimensions
+import numpy as np
+a = np.array(42)
+b = np.array([1, 2, 3, 4, 5])
+c = np.array([[1, 2, 3], [4, 5, 6]])
+d = np.array([[[1, 2, 3], [4, 5, 6]], [[1, 2, 3], [4, 5, 6]]])
+print(a.ndim)
+print(b.ndim)
+print(c.ndim)
+print(d.ndim)
+
+#Example - 7 : Access 1-D array
+arr = np.array([1, 2, 3, 4])
+print(arr[1])
+
+#Example - 8 : Access 2-D Arrays, Access the element on the 2nd row, 5th column
+arr = np.array([[1,2,3,4,5], [6,7,8,9,10]])
+print('5th element on 2nd row: ', arr[1, 4])
+
+#Example - 9 : Access 3-D Arrays, Access the third element of the second array of the first array
+arr = np.array([[[1, 2, 3], [4, 5, 6]], [[7, 8, 9], [10, 11, 12]]])
+print(arr[0, 1, 2])
+
+#Example - 10 : Negative Indexing, Print the last element from the 2nd dim
+arr = np.array([[1,2,3,4,5], [6,7,8,9,10]])
+print('Last element from 2nd dim: ', arr[1, -1])
+
+#Example - 11 : Slicing
+arr = np.array([1, 2, 3, 4, 5, 6, 7])
+print(arr[1:5])
+print(arr[4:])
+print(arr[:4])
+
+#Example - 12 : Negative Slicing
+arr = np.array([1, 2, 3, 4, 5, 6, 7])
+print(arr[-3:-1])
+
+#Example - 13 : STEP, Return every other element from index 1 to index 5
+arr = np.array([1, 2, 3, 4, 5, 6, 7])
+print(arr[1:5:2])
+
