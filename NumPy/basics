@@ -1,10 +1,7 @@
 #Example - 1 : Create a NumPy ndarray Object
 import numpy as np
-
 arr = np.array([1, 2, 3, 4, 5])
-
 print(arr)
-
 print(type(arr))
 
 --> Output :
@@ -93,3 +90,10 @@ newarr = arr.astype(int)
 print(newarr)
 print(newarr.dtype)
 
+The shape of an array is the number of elements in each dimension.
+
+#Example - 15 :
+arr = np.array([[1, 2, 3, 4], [5, 6, 7, 8]])
+print(arr.shape)
+
+--> Output : (2,4)
