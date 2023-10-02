@@ -46,3 +46,52 @@ print(arr)
 arr = np.array([1, 2, 3, 4, 5])
 print(random.permutation(arr))
 
+Seaborn module :
+Distplot stands for distribution plot, it takes as input an array and plots a curve corresponding to the distribution of points in the array.
+
+#Example - 11 : Plotting a Distplot
+import matplotlib.pyplot as plt
+import seaborn as sns
+sns.distplot([0, 1, 2, 3, 4, 5])
+plt.show()
+
+
+#Example - 12 : Plotting a Distplot Without the Histogram
+import matplotlib.pyplot as plt
+import seaborn as sns
+sns.distplot([0, 1, 2, 3, 4, 5], hist=False)
+plt.show()
+
+Use the random.normal() method to get a Normal Data Distribution.
+It has three parameters:
+loc - (Mean) where the peak of the bell exists.
+scale - (Standard Deviation) how flat the graph distribution should be.
+size - The shape of the returned array.
+
+#Example - 13 : Generate a random normal distribution of size 2x3 with mean at 1 and standard deviation of 2
+from numpy import random
+x = random.normal(loc=1, scale=2, size=(2, 3))
+print(x)
+
+
+#Example - 14 : Visualization of Normal Distribution
+from numpy import random
+import matplotlib.pyplot as plt
+import seaborn as sns
+sns.distplot(random.normal(size=1000), hist=False)
+plt.show()
+
+
+#Example - 15 :
+
+
+#Example - 16 :
+
+
+#Example - 17 :
+
+
+#Example - 18 :
+
+
+#Example - 20 :
