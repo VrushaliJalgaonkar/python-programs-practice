@@ -37,6 +37,12 @@ Output -->
 [7 5 7 7 7]
 [7 5 7 7 7]]
 
-#Example - 9 :
+#Example - 9 : Randomly shuffle elements of following array. The shuffle() method makes changes to the original array.
+arr = np.array([1, 2, 3, 4, 5])
+random.shuffle(arr)
+print(arr)
 
-#Example - 10 :
+#Example - 10 : Generate a random permutation of elements of following array. The permutation() method returns a re-arranged array (and leaves the original array un-changed).
+arr = np.array([1, 2, 3, 4, 5])
+print(random.permutation(arr))
+
