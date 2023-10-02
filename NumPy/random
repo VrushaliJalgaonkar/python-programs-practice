@@ -1,0 +1,32 @@
+#Example - 1 : Generate a random integer from 0 to 100
+from numpy import random
+x = random.randint(100)
+
+#Example - 2 : Generate a random float from 0 to 1
+x = random.rand()
+
+#Example - 3 : Generate a 1-D array containing 5 random integers from 0 to 100
+x=random.randint(100, size=(5))
+
+#Example - 4 : Generate a 2-D array with 3 rows, each row containing 5 random integers from 0 to 100
+x = random.randint(100, size=(3, 5))
+
+#Example - 5 : Generate a 1-D array containing 5 random floats
+x = random.rand(5)
+
+#Example - 6 : Generate a 2-D array with 3 rows, each row containing 5 random numbers
+x = random.rand(3, 5)
+
+#Example - 7 : Generate a 2-D array that consists of the values in the array parameter (3, 5, 7, and 9)
+x = random.choice([3, 5, 7, 9], size=(3, 5))
+
+Output -->
+[[5 9 7 5 9]
+[3 7 7 9 7]
+[3 7 9 9 5]]
+
+#Example - 8 :
+
+#Example - 9 :
+
+#Example - 10 :

@@ -202,5 +202,3 @@ filter_arr = arr % 2 == 0
 newarr = arr[filter_arr]
 print(filter_arr)
 print(newarr)
-
-
