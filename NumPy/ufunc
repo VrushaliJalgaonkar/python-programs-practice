@@ -155,5 +155,12 @@ import numpy as np
 nplog = np.frompyfunc(log, 2, 1)
 print(nplog(100, 15))
 
-#Example - 21 :
+#Example - 21 : Cummulative sum means partially adding the elements in array. The partial sum of [1, 2, 3, 4] would be [1, 1+2, 1+2+3, 1+2+3+4] = [1, 3, 6, 10].
+import numpy as np
+arr = np.array([1, 2, 3])
+newarr = np.cumsum(arr)
+print(newarr)
+
+
+
 
