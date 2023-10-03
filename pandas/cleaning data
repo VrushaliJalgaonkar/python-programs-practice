@@ -1,0 +1,47 @@
+#Example - 1 : Return a new Data Frame with no empty cells. By default, the dropna() method returns a new DataFrame, and will not change the original.
+import pandas as pd
+df = pd.read_csv('data.csv')
+new_df = df.dropna()
+print(new_df.to_string())
+
+#Example - 2 : Remove all rows with NULL values. If you want to change the original DataFrame, use the inplace = True argument.
+import pandas as pd
+df = pd.read_csv('data.csv')
+df.dropna(inplace = True)
+print(df.to_string())
+
+#Example - 3 : Replace NULL values with the number 130
+import pandas as pd
+df = pd.read_csv('data.csv')
+df.fillna(130, inplace = True)
+
+#Example - 4 : Replace NULL values in the "Calories" columns with the number 130
+import pandas as pd
+df = pd.read_csv('data.csv')
+df["Calories"].fillna(130, inplace = True)
+
+#Example - 5 : Calculate the MEAN, and replace any empty values with it
+import pandas as pd
+df = pd.read_csv('data.csv')
+x = df["Calories"].mean()
+df["Calories"].fillna(x, inplace = True)
+
+#Example - 6 : Calculate the MEDIAN, and replace any empty values with it
+import pandas as pd
+df = pd.read_csv('data.csv')
+x = df["Calories"].median()
+df["Calories"].fillna(x, inplace = True)
+
+#Example - 7 : Calculate the MODE, and replace any empty values with it
+df = pd.read_csv('data.csv')
+x = df["Calories"].mode()[0]
+df["Calories"].fillna(x, inplace = True)
+
+#Example - 8 : Returns True for every row that is a duplicate, othwerwise False
+print(df.duplicated())
+
+#Example - 9 : Remove all duplicates
+df.drop_duplicates(inplace = True)
+
+
+
