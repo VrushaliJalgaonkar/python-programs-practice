@@ -134,13 +134,26 @@ import numpy as np
 arr = np.ceil([-3.1666, 3.6667])
 print(arr)
 
-#Example - 17 :
+#Example - 17 : Find log at base 2 of all elements of following array. The arange(1, 10) function returns an array with integers starting from 1 (included) to 10 (not included).
+import numpy as np
+arr = np.arange(1, 10)
+print(np.log2(arr))
 
-#Example - 18 :
+#Example - 18 : Find log at base 10 of all elements of following array
+import numpy as np
+arr = np.arange(1, 10)
+print(np.log10(arr))
 
-#Example - 19 :
+#Example - 19 : Find log at base e of all elements of following array
+import numpy as np
+arr = np.arange(1, 10)
+print(np.log(arr))
 
-#Example - 20 :
+#Example - 20 : Log at Any Base
+from math import log
+import numpy as np
+nplog = np.frompyfunc(log, 2, 1)
+print(nplog(100, 15))
 
 #Example - 21 :
 
