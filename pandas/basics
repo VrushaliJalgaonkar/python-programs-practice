@@ -58,3 +58,16 @@ print(df.to_string())
 import pandas as pd
 df = pd.read_json('data.json')
 print(df.to_string())
+
+
+#Example - 7 : Get a quick overview by printing the first 10 rows of the DataFrame. if the number of rows is not specified, the head() method will return the top 5 rows.
+import pandas as pd
+df = pd.read_csv('data.csv')
+print(df.head(10))
+
+#Example - 8 : Print the last 5 rows of the DataFrame
+print(df.tail())
+
+#Example - 9 : Print information about the data
+print(df.info())
+
