@@ -185,6 +185,61 @@ arr = np.array([20, 8, 32, 36, 16])
 x = np.gcd.reduce(arr)
 print(x)
 
-#Example - 26 :
+#Example - 26 : Find sine values for all of the values in arr
+import numpy as np
+arr = np.array([np.pi/2, np.pi/3, np.pi/4, np.pi/5])
+x = np.sin(arr)
+print(x)
 
+#Example - 27 : Convert all of the values in following array arr to radians
+import numpy as np
+arr = np.array([90, 180, 270, 360])
+x = np.deg2rad(arr)
+print(x)
 
+#Example - 28 : Convert all of the values in following array arr to degrees
+import numpy as np
+arr = np.array([np.pi/2, np.pi, 1.5*np.pi, 2*np.pi])
+x = np.rad2deg(arr)
+print(x)
+
+#Example - 29 : Finding hypotenues using pythagoras theorem.
+import numpy as np
+base = 3
+perp = 4
+x = np.hypot(base, perp)
+print(x)
+
+#Example - 30 : Convert following array with repeated elements to a set
+import numpy as np
+arr = np.array([1, 1, 1, 2, 3, 4, 5, 5, 6, 7])
+x = np.unique(arr)
+print(x)
+
+#Example - 31 : Find union of the following two set arrays
+import numpy as np
+arr1 = np.array([1, 2, 3, 4])
+arr2 = np.array([3, 4, 5, 6])
+newarr = np.union1d(arr1, arr2)
+print(newarr)
+
+#Example - 32 : Find intersection of the following two set arrays. assume_unique if set to True can speed up computation. It should always be set to True when dealing with sets
+import numpy as np
+arr1 = np.array([1, 2, 3, 4])
+arr2 = np.array([3, 4, 5, 6])
+newarr = np.intersect1d(arr1, arr2, assume_unique=True)
+print(newarr)
+
+#Example - 33 : Finding Difference. To find only the values in the first set that is NOT present in the seconds set
+import numpy as np
+set1 = np.array([1, 2, 3, 4])
+set2 = np.array([3, 4, 5, 6])
+newarr = np.setdiff1d(set1, set2, assume_unique=True)
+print(newarr)
+
+#Example - 34 : Finding Symmetric Difference. To find only the values that are NOT present in BOTH sets.
+import numpy as np
+set1 = np.array([1, 2, 3, 4])
+set2 = np.array([3, 4, 5, 6])
+newarr = np.setxor1d(set1, set2, assume_unique=True)
+print(newarr)
