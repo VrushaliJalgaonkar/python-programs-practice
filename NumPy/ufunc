@@ -102,14 +102,45 @@ newarr = np.absolute(arr)
 print(newarr)
 
 
-#Example - 12 :
+There are primarily five ways of rounding off decimals in NumPy:
+truncation
+fix
+rounding
+floor
+ceil
 
+#Example - 12 : Truncate elements using trunc() function
+import numpy as np
+arr = np.trunc([-3.1666, 3.6667])
+print(arr)
 
-#Example - 13 :
+#Example - 13 : Truncate elements using fix() function
+import numpy as np
+arr = np.trunc([-3.1666, 3.6667])
+print(arr)
 
+#Example - 14 : Round off 3.1666 to 2 decimal places
+import numpy as np
+arr = np.around(3.1666, 2)
+print(arr)
 
-#Example - 14 :
+#Example - 15 : Floor the elements of following array
+import numpy as np
+arr = np.floor([-3.1666, 3.6667])
+print(arr)
 
+#Example - 16 : Ceil the elements of following array
+import numpy as np
+arr = np.ceil([-3.1666, 3.6667])
+print(arr)
 
-#Example - 15 :
+#Example - 17 :
+
+#Example - 18 :
+
+#Example - 19 :
+
+#Example - 20 :
+
+#Example - 21 :
 
